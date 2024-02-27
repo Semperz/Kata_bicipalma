@@ -1,4 +1,5 @@
 package edu.badpals.domain.bicicleta;
 
-public class Movil {
+public interface Movil {
+    int getId();
 }
