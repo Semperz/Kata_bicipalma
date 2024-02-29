@@ -3,7 +3,7 @@ package edu.badpals.estacion;
 import edu.badpals.domain.bicicleta.Movil;
 
 public class Anclaje {
-    private boolean ocupado;
+    private boolean ocupado = false;
 
     private Movil bici;
 
