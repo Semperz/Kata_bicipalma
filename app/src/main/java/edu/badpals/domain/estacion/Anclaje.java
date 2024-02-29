@@ -1,4 +1,4 @@
-package edu.badpals.estacion;
+package edu.badpals.domain.estacion;
 
 import edu.badpals.domain.bicicleta.Movil;
 
