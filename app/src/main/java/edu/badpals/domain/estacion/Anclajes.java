@@ -1,5 +1,6 @@
 package edu.badpals.domain.estacion;
 import edu.badpals.domain.bicicleta.Movil;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class Anclajes {
 
@@ -43,6 +44,11 @@ public class Anclajes {
 
     Movil getBiciAt(int posicion) {
         return this.anclajes[posicion].getBici();
+    }
+
+    int seleccionarAnlcaje(){
+        Integer idAnclaje = ThreadLocalRandom.current().nextInt(0, numAnclajes());
+        return idAnclaje;
     }
 
     @Override
