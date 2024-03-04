@@ -4,22 +4,22 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class Anclajes {
 
-    private Short numAnclajes = 0;
+    private Integer numAnclajes = 0;
     private final Anclaje[] anclajes;
 
-    Anclajes(short numAnclajes) {
+    Anclajes(Integer numAnclajes) {
         this.anclajes = new Anclaje[numAnclajes];
         for (int i = 0; i < numAnclajes; i++) {
             this.anclajes[i] = new Anclaje();
         }
     }
 
-    public void setNumAnclajes(short numAnclajes) {
+    public void setNumAnclajes(Integer numAnclajes) {
         this.numAnclajes = numAnclajes;
     }
 
-    public Short getNumAnclajes() {
-        return numAnclajes;
+    public Integer getNumAnclajes() {
+        return this.numAnclajes;
     }
 
     Anclaje[] anclajes() {
@@ -53,6 +53,6 @@ public class Anclajes {
 
     @Override
     public String toString() {
-        return "Numero de anclajes" + Short.toString(getNumAnclajes());
+        return "Numero de anclajes: " + Integer.toString(getNumAnclajes());
     }
 }
