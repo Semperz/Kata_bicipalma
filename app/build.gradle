@@ -17,11 +17,7 @@ repositories {
 }
 
 dependencies {
-    // Use JUnit test framework.
-    testImplementation libs.junit
-
-    // This dependency is used by the application.
-    implementation libs.guava
+    testImplementation 'junit:junit:4.12'
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
